@@ -1,1 +1,29 @@
-
+{
+  "STATE": "STABIL",
+  "READY": "100%",
+  "cycle": 7,
+  "work": 6,
+  "slack": 1,
+  "onlyIfIn": true,
+  "benchRitze": "alte Ergebnisse ritze und neue genutzt, Arbeit und Lohn ändert sich sofort",
+  "save": "1x bleibt, 2x von vorne ohne Schloss",
+  "axiom": {
+    "I": { "function": "input-core", "direction": "S", "uniform": 8, "center": 9 },
+    "U": { "function": "under-core", "direction": "SW", "uniform": 8, "center": 9 },
+    "W": { "function": "wind-transfer", "direction": "NW", "uniform": 8, "center": 9 },
+    "S": { "function": "stream-core", "direction": "SE", "uniform": 8, "center": 9 },
+    "R": { "function": "route-shift", "direction": "NE", "uniform": 8, "center": 9 },
+    "O": { "function": "origin-core", "direction": "CENTER", "uniform": 8, "center": 9 },
+    "N": { "function": "node-transfer", "direction": "W", "uniform": 8, "center": 9 },
+    "E": { "function": "energy-transfer", "direction": "E", "uniform": 8, "center": 9 },
+    "D": { "function": "data-flow", "direction": "N", "uniform": 8, "center": 9 }
+  },
+  "files": [
+    "axiom.ma", "aufzug.js", "axiom.map.js", "coord.js",
+    "etage.html", "index.html",
+    "d.hdf.rom", "e.hdf.rom", "i.hdf.rom", "n.hdf.rom",
+    "o.hdf.rom", "r.hdf.rom", "s.hdf.rom", "u.hdf.rom", "w.hdf.rom",
+    "d.raw", "stand.raw", "sli.ready"
+  ],
+  "note": "Maß aller Dinge weil fail erlaubt - nicht jeden Tag rein, nur wenn rein nächstes Datum"
+}
